@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for login */
+.login-container {
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Login form styling */
+.login-form {
+    background-color: #ffffff; /* Changed to pure white */
+    padding: 40px;
+}
+
+.login-form h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form .form-group label {
+    color: #555;
+}
+
+.login-form input {
+    margin-top: 10px;
+}
+
+.login-form .btn {
+    margin-top: 20px;
+    background-color: #178115;
+    color: #fff;
+    width: 100%;
+    border: none;
+}
+
+.login-form .btn:hover {
+    background-color: #195312;
+}
+
+.text-center a {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Logo section styling */
+.logo-section {
+    background-color: #1A0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add Bootstrap utility classes to control visibility */
+    display: none; /* Hidden by default */
+}
+
+@media (min-width: 768px) {
+    /* Show logo section on medium and larger screens */
+    .logo-section {
+        display: flex;
+    }
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    /* Stack the layout vertically on smaller screens */
+    .login-container {
+        flex-direction: column;
+    }
+
+    /* Make both sections take full width */
+    .login-form, .logo-section {
+        width: 100%;
+    }
+
+    /* Adjust padding for smaller screens */
+    .login-form {
+        padding: 30px;
+    }
+}
